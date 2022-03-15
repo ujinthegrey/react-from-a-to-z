@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App {
+    width: 800px;
+}
+/* ----POST--------------------- */
+.post {
+    display: flex;
+    padding: 15px;
+    border: 1px solid #555;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btns {
+    display: flex;
+    margin: 5px;
+}
+
+.post-enter {
+    opacity: 0;
+    transform: translateY(100%)
+}
+.post-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateY(100vh) rotateZ(25deg);
+    transition: all 500ms ease-in;
+}
+/* --PAGE-BUTToNS------------- */
+.page__wrapper {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    margin: 0px 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;;
+    text-align: center;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+.page:hover {
+    box-shadow: 0px 0px 5px 5px gold;
+}
+.page__current {
+    border: 2px solid gold;
+    font-weight: 700;
+    color: gold
+}
+.page__current:hover {
+    box-shadow: none;
+}
+
+
+
